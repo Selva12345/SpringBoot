@@ -24,6 +24,7 @@ import java.net.URL;
 public class DataCall {
 	@Autowired
 	SystemRepository systemRepository;
+	
 	@GetMapping("good/{id}")
 	public  String caller(@PathVariable("id") String id) {
 		String  f=null;
