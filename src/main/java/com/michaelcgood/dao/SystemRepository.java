@@ -6,6 +6,8 @@ import com.michaelcgood.model.SystemExample;
 
 @Repository
 public interface SystemRepository extends CrudRepository<SystemExample,Long> {
+
+	String findByname(String string);
 	
 
 }

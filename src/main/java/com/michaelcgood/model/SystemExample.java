@@ -10,8 +10,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "system_example")
 public class SystemExample {
-
-	private String name;
+	
+	
 	private String lastaudit;
 	public String getLastaudit() {
 		return lastaudit;
@@ -23,6 +23,8 @@ public class SystemExample {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="id")
 	private long id;
+	private String name;
+
 	public long getId() {
 		return id;
 	}
